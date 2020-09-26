@@ -141,6 +141,7 @@ public class DbConnectPool {
      * @param connection 释放的链接对象
      */
     public synchronized void freeConnection(Connection connection) {
+        System.out.println("释放链接到连接池");
         if (!freeConnects.contains(connection)) {
             freeConnects.add(connection);
             checkoutConnect--;
