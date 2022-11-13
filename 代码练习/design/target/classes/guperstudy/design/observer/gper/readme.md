@@ -1,1 +1,0 @@
-使用jdk内置的Observable API来实现观察者模型
